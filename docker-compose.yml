@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: pyme_agentes_db
+    environment:
+      POSTGRES_USER: pyme_admin
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: pyme_agentes
+    ports:
+      - "5432:5432"
+    volumes:
+      - pyme_pgdata:/var/lib/postgresql/data
+
+volumes:
+  pyme_pgdata:

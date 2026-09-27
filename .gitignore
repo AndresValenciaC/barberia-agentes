@@ -1,0 +1,10 @@
+credentials.json
+token.json
+.env
+ultima_autorizacion.txt
+venv/
+__pycache__/
+*.xlsx
+resultado.txt
+.vscode/
+.claude/settings.local.json
